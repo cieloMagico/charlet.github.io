@@ -1,0 +1,225 @@
+.card {
+    width: 250px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-description {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.add-to-cart {
+    background-color: #2577fd;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas fijas */
+    grid-template-rows: repeat(3, auto); /* 3 filas fijas */
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px; /* Para que no se estire demasiado en pantallas grandes */
+    margin: auto; /* Centra el grid en la página */
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title {
+    background-color: #f8f8f8;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-description {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.add-to-cart {
+    background-color: #2577fd;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #1f5fc5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        grid-template-rows: repeat(5, auto); /* Ajusta el número de filas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+        grid-template-rows: repeat(9, auto); /* 9 filas en móviles */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery-wrapper {
+    display: flex;
+    justify-content: center; /* Centra la galería horizontalmente */
+    align-items: center; /* Alinea las imágenes verticalmente */
+    width: 100%; /* Hace que ocupe todo el ancho disponible */
+    padding: 20px 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center; /* Centra el contenedor de la galería */
+    align-items: center; /* Centra las imágenes dentro del contenedor */
+    width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes uniformemente */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    gap: 0; /* Sin espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si no caben */
+}
+
+.gallery-item {
+    width: 20%; /* Ajusta el tamaño de cada imagen */
+    padding: 0;
+}
+
+.gallery-item img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin deformarse */
+}
+
+/* Responsive: Ajusta en pantallas medianas */
+@media (max-width: 1024px) {
+    .gallery-item {
+        width: 25%; /* En pantallas medianas, toma un 25% del ancho */
+    }
+}
+
+/* Responsive: Ajusta en pantallas pequeñas */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 33.33%; /* En pantallas pequeñas, toma un 33.33% del ancho */
+    }
+}
+
+/* Responsive: Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 50%; /* En pantallas muy pequeñas, toma un 50% del ancho */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-social {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 15px; /* Espacio entre los iconos */
+    height: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center; /* Centra el ícono dentro de cada enlace */
+    justify-content: center;
+    width: 40px; /* Define el tamaño de los botones */
+    height: 40px; /* Define el tamaño de los botones */
+    border-radius: 50%; /* Hace los botones circulares */
+    background-color: #f0f0f0; /* Fondo claro para los botones */
+    color: #333; /* Color del ícono */
+    text-decoration: none; /* Elimina subrayado */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.footer-social a:hover {
+    background-color: #007BFF; /* Fondo cuando el botón es hover */
+    color: white; /* Cambia el color del ícono en hover */
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente en hover */
+}
+
+.footer-social svg {
+    width: 20px; /* Tamaño del ícono */
+    height: 20px; /* Tamaño del ícono */
+}
+

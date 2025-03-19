@@ -1,0 +1,107 @@
+/* Estilos generales */
+.custom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Botón de búsqueda */
+.custom-btn-info {
+    background-color: #17a2b8;
+    color: white;
+    padding: 5px 10px;
+}
+
+.custom-btn-info:hover {
+    background-color: #117a8b;
+}
+
+/* Botón de eliminar */
+.custom-btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.custom-btn-danger:hover {
+    background-color: #a71d2a;
+}
+
+/* Botón de cerrar */
+.custom-btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.custom-btn-secondary:hover {
+    background-color: #565e64;
+}
+
+/* Estilo del botón de cerrar modal */
+.custom-btn-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.custom-btn-close:hover {
+    color: red;
+}
+/* Botón de edición */
+.custom-btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.custom-btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Estilos personalizados para botones */
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-save {
+    background-color: #28a745;
+    color: white;
+}
+
+.custom-save:hover {
+    background-color: #218838;
+}
+
+.custom-cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.custom-cancel:hover {
+    background-color: #c82333;
+}
+
+/* Botón de cerrar (X) */
+.custom-close {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.custom-close:hover {
+    color: #dc3545;
+}
